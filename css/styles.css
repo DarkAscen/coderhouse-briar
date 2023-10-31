@@ -1,0 +1,844 @@
+@font-face {
+    font-family: Beaufort for LOL;
+    src: url(../fonts/beaufort-for-lol/BeaufortforLOL-Medium.ttf);
+}
+
+@font-face {
+    font-family: FF Mark W05;
+    src: url(../fonts/ff-mark/FontFont_FF.Mark.Pro.Black.otf);
+}
+
+* {
+    background-color: rgb(5, 13, 17);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px;
+    grid-template-columns: 300px 700px 300px; 
+    grid-template-areas:
+    "rel quote role"
+    "rel quote region"
+    "rel quote region"
+    "rel bio region"
+    "rel bio region"
+    "rel bio region"
+    "rel bio gameinfo"
+    "rel bio gameinfo";
+    grid-gap: 15px;
+    margin: 30px 0px 30px 0px;
+    justify-content: center;
+}
+
+.briar-title {
+    text-align: center;
+    font-size: 104px;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    font-family: Beaufort for LOL,Arial,sans-serif;
+}
+
+.title-pos {
+    position: relative;
+    top: 70%;
+    background-color: transparent;
+    color: #937341;
+    text-shadow: 1px 1px 5px #111;
+}
+
+.bio-title-pos {
+    position: relative;
+    top: 50%;
+    background-color: transparent;
+    font-size: 90px;
+    font-weight: 500;
+    font-family: Beaufort for LOL,Arial,sans-serif;
+    letter-spacing: 0.05em;
+}
+
+.background-briar {
+    background-image: url(../Imagenes/briarDefault.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 10px double #937341;
+    border-bottom: 10px double #937341;
+}
+
+.background-game-info {
+    background-image: url(../Imagenes/briarDefault.jpg);
+    background-repeat: no-repeat;
+    background-size: 80vw;
+    height: 900px;
+    background-position: center;
+}
+
+.champ-title {
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    color: #c4b998;
+    font-family: Beaufort for LOL,Arial,sans-serif;;
+}
+
+.biography {
+    background-image: url(../Imagenes/briarDefault.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    line-height: 1.2;
+    grid-area: bio;
+    display: flex;
+    font-family: Beaufort for LOL,Arial,sans-serif;
+}
+
+.biography p::first-letter {
+    font-size: 40px;
+    border-bottom: 3px solid #937341;
+    font-weight: 500;
+    margin: 0px 20px 0px 18px;
+    float: left;
+}
+
+.biography p {
+    padding: 20px 50px 20px 50px;
+    color: #c4b998;
+}
+
+.biography a {
+    border: 2px solid #937341;
+    color: #c4b998;
+    padding: 20px 30px 20px 30px;
+    flex-direction: flex-end;
+    background-color: #111;
+}
+
+.bio-text {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.capa {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    font-family: FF Mark W05,Arial,sans-serif;
+}
+
+.header {
+    background-color: #111;
+    font-family: FF Mark W05,Arial,sans-serif;
+    text-decoration: none;
+    padding: 5px;
+}
+
+header {
+    background-color: #111;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    display: inline-block;
+}
+
+.navig {
+    word-spacing: 1em;
+    font-weight: lighter;
+}
+
+.bloque {
+    display: inline-block;
+}
+
+.background {
+    background-color: #111;
+}
+
+.related-champs {
+    border: solid 1px #937341;
+    grid-area: rel;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    border: solid 1px #937341;
+    grid-area: quote;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote img {
+    border: 10px double #937341;
+    position: relative;
+    bottom: 30%;
+}
+
+.quote p {
+    position: relative;
+    bottom: 20%;
+    font-size: 25px;
+    padding: 10px;
+    font-family: Beaufort for LOL,Arial,sans-serif;
+    font-weight: 500;
+}
+
+.quote-name {
+    color: #937341;
+}
+
+.quote-text {
+    color: #c4b998;
+}
+
+.biography {
+    border: solid 1px #937341;
+    grid-area: bio;
+}
+
+.role {
+    border: solid 1px #937341;
+    grid-area: role;
+    display: flex;
+}
+
+.role img {
+    border-right: solid 1px #937341;
+    padding: 15px;
+    width: 25%;
+}
+
+.role-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: Beaufort for LOL,Arial,sans-serif;
+}
+
+.region-briar {
+    border: solid 1px #937341;
+    grid-area: region;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../imagenes/noxus_splash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.region-text {
+    border-top: 1px solid #937341;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: "Beaufort for LOL", Arial, sans-serif;
+}
+
+.text-color {
+    color: #c4b998;
+}
+
+.lighter {
+    font-weight: lighter;
+}
+
+.game-info-briar {
+    border: solid 1px #937341;
+    grid-area: gameinfo;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(../imagenes/briarDefault.jpg);
+    background-size: cover;
+}
+
+.game-info-briar a{
+    background-color: transparent;
+}
+
+.game-info-text {
+    border-top: 1px solid #937341;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    font-family: "Beaufort for LOL", Arial, sans-serif;
+}
+
+footer {
+    text-align: center;
+    margin: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.border {
+    border: solid 1px #fff;
+}
+
+.bio-title {
+    text-align: center;
+    font-family: Beaufort for LOL,Arial,sans-serif;
+}
+
+.biography-corpse {
+    height: auto;
+    width: 600px;
+    font-family: Beaufort for LOL,Arial,sans-serif;
+    margin: 40px auto;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+}
+
+.bio-name {
+    margin-top: 10px;
+    color: #c4b998;
+}
+
+.biography-corpse p{
+    color: #949494; 
+    padding: 10px 0;
+}
+
+.bio-title{
+    font-family: Beaufort for LOL,Arial,sans-serif;
+}
+
+.bio-title h2 {
+    font-size: 24px;
+    letter-spacing: 0.05em;
+}
+
+.bio-title h5 {
+    color: #c8aa6e;
+}
+
+.regions {
+    width: 100%;
+    height: 2000px;
+}
+
+.region-div-1 {
+    height: 350px;
+    background-color: #111111ad;
+}
+
+.region-bubbles {
+    background-color: #111111ad;
+}
+
+.back-map {
+    background-image: url(../Imagenes/runeterra-map.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.layer {
+    background-color: #111111c9;
+    width: 100%;
+    height: 100%;
+}
+
+.index-pos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio-text p {
+    background-color: transparent;
+}
+
+.bubble {
+    height: 200px;
+    width: 320px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    border: 1px solid #1e2328;
+    background-color: transparent;
+}
+
+.bubble:hover {
+    transform: scale(1.2);
+}
+
+.bandle-city {
+    background-image: url(../Imagenes/bandle-city_splash.jpg);
+    background-size: cover;
+}
+
+.bilgewater {
+    background-image: url(../Imagenes/bilgewater_splash.jpg);
+    background-size: cover;
+}
+
+.demacia {
+    background-image: url(../Imagenes/bandle-city_splash.jpg);
+    background-size: cover;
+}
+
+.ionia {
+    background-image: url(../Imagenes/ionia-splash.jpg);
+    background-size: cover;
+}
+
+.ixtal {
+    background-image: url(../Imagenes/ixtal-splash.jpg);
+    background-size: cover;
+}
+
+.noxus {
+    background-image: url(../Imagenes/noxus_splash.jpg);
+    background-size: cover;
+}
+
+.piltover {
+    background-image: url(../Imagenes/piltover_splash.jpg);
+    background-size: cover;
+}
+
+.shadow-isles {
+    background-image: url(../Imagenes/shadow-isles_splash.jpg);
+    background-size: cover;
+}
+
+.shurima {
+    background-image: url(../Imagenes/shurima_splash.jpg);
+    background-size: cover;
+}
+
+.targon {
+    background-image: url(../Imagenes/mount-targon_splash.jpg);
+    background-size: cover;
+}
+
+.freljord {
+    background-image: url(../Imagenes/freljord_splash.jpg);
+    background-size: cover;
+}
+
+.void {
+    background-image: url(../Imagenes/void-splash.jpg);
+    background-size: cover;
+}
+
+.zaun {
+    background-image: url(../Imagenes/zaun_splash.jpeg);
+    background-size: cover;
+}
+
+.regions-title {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    text-align: left;
+    margin-left: 20px;
+    font-family: Beaufort for LOL,Arial,sans-serif;
+    position: relative;
+    top: 55%;
+    background-color: transparent;
+}
+
+.region-title {
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    font-family: Beaufort for LOL,Arial,sans-serif;
+}
+
+.region-row {
+    display: flex;
+    background-color: transparent;
+    justify-content: space-evenly;
+}
+
+.row-4 {
+    margin-bottom: 20px;
+}
+
+.champ {
+    border: 1px solid #111;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.champ:hover {
+    transform: scale(1.1);
+}
+
+.cassio {
+    background-image: url(../Imagenes/Cassiopeia_splash.jpg);
+    background-size: cover;
+    background-position: 70%;
+}
+.darius {
+    background-image: url(../Imagenes/Darius_splash.jpg);
+    background-size: cover;
+    background-position: 70% 30%;
+}
+.draven {
+    background-image: url(../Imagenes/Draven_splash.jpg);
+    background-size: cover;
+    background-position: 85% 8%;
+}
+.kata {
+    background-image: url(../Imagenes/Katarina_splash.jpg);
+    background-size: cover;
+    background-position: 70%;
+}
+.kled {
+    background-image: url(../Imagenes/Kled_splash.jpg);
+    background-size: cover;
+    background-position: 89%;
+}
+.leblanc {
+    background-image: url(../Imagenes/Leblanc_splash.jpg);
+    background-size: cover;
+    background-position: 75%;
+}
+.morde {
+    background-image: url(../Imagenes/Mordekaiser_splash.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+.riven {
+    background-image: url(../Imagenes/Riven_splash.jpg);
+    background-size: cover;
+    background-position: 90%;
+}
+.samira {
+    background-image: url(../Imagenes/samira-splash.jpg);
+    background-size: cover;
+    background-position: 62%;
+}
+.sion {
+    background-image: url(../Imagenes/Sion_splash.jpg);
+    background-size: cover;
+    background-position: 80%;
+}
+.swain {
+    background-image: url(../Imagenes/swain-splash.jpg);
+    background-size: cover;
+    background-position: 75%;
+}
+.talon {
+    background-image: url(../Imagenes/Talon_splash.jpg);
+    background-size: cover;
+    background-position: 70%;
+}
+.vladi {
+    background-image: url(../Imagenes/Vladimir_splash.jpg);
+    background-size: cover;
+    background-position: 80%;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family: Beaufort for LOL,Arial,sans-serif;
+    font-weight: lighter;
+    color: #c4b998;
+}
+
+.champ-noxus {
+    width: 100%;
+    height: 70px;
+    border-top: 1px solid #c4b998;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Beaufort for LOL,Arial,sans-serif;
+}
+
+.noxian {
+    font-size: 14px;
+}
+
+.champ-name {
+    font-size: 20px;
+    color: #c4b998;
+}
+
+.footer-logo{
+    width: 100px;
+    height: 32px;
+    margin: 10px;
+}
+
+.rel-champs {
+    width: 140px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #937341;
+}
+
+.champ-cage:hover{
+    transform: scale(1.2);
+}
+
+.champ-cages {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.champ-cage {
+    margin: 20px;
+}
+
+.esrb{ 
+    width: 80px;
+    height: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    background-color: #292929;
+}
+
+.noxus-emblem{
+    width: 250px;
+    height: auto;
+    background-color: transparent;
+}
+
+.noxus-link {
+    background-color: transparent;
+}
+
+.noxus-emblem:hover {
+    transform: scale(1.2);
+}
+
+.fighter-icon {
+    width: 50px;
+    height: auto;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.icon {
+    width: 32px;
+    height: auto;
+}
+
+.quote-briar {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.quote-img {
+    width: 160px;
+    height: 160px;
+}
+
+.game-info-icon{
+    width: 80px;
+    height: auto;
+    background-color: transparent;
+}
+
+.game-info-icon:hover {
+    transform: scale(1.2);
+}
+
+.f-icon {
+    width: 40px;
+    height: auto;
+}
+
+.skill-icon{
+    width: 50px;
+    height: auto;
+}
+
+.noxus-crest {
+    width: 150px;
+    height: auto;
+    background-color: transparent;
+    position: relative;
+    bottom: 10%;
+}
+
+.rel-title{
+    text-align: center;
+    font-weight: bold;
+    color: #c4b998;
+    font-family: "Beaufort for LOL", Arial, sans-serif;
+}
+
+.related-title {
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #937341;
+    font-family: Beaufort for LOL,Arial,sans-serif;
+}
+
+.noxus-n::first-letter{
+    font-size: 50px;
+    border-bottom: 3px solid #937341;
+    font-weight: 500;
+    margin: 0px 20px 0px 18px;
+    float: left;
+}
+
+.footer-text {
+    width: 500px;
+    padding: 10px;
+}
+
+.footer-copyright {
+    margin: 30px;
+    width: 45%;
+    font-family: "FF Mark W05",Arial,sans-serif;
+    color: #7e7e7e;
+}
+
+.footer-form {
+    font-family: "FF Mark W05",Arial,sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: #292929;
+}
+
+.footer-form p {
+    background-color: #292929;
+    font-weight: 600;
+}
+
+.esrb-class {
+    display: flex;
+}
+
+.footer-back {
+    background-color: #292929;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    width: 390px;
+}
+
+.noxus-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../imagenes/noxus_splash.jpg);
+    height: 500px;
+    justify-content: flex-end;
+}
+
+.noxus-title-pos {
+    color: #937341;
+    background-color: transparent;
+    text-shadow: 1px 1px 5px #111;
+}
+
+.noxus-bio p {
+    font-family: Beaufort for LOL,Arial,sans-serif;
+    color: #c4b998;
+    padding: 10px 0;
+}
+
+.noxus-bio {
+    width: 600px;
+    height: auto;
+    letter-spacing: 0.02em;
+    font-size: 20px;
+    margin: 40px auto;
+}
+
+.champ-bubbles {
+    display: grid;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-columns: 240px 240px 240px 240px 240px;
+    justify-content: center;
+    grid-gap: 15px;
+    margin: 30px 0px 90px 0px;
+}
+
+.video-box {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    border: 1px solid rgba(202,171,103,.37);
+    align-items: center;
+    justify-content: left;
+    height: 500px;
+    margin: 30px auto 60px auto;
+}
+
+.video-text {
+    font-family: Beaufort for LOL,Arial,sans-serif;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
+.video-title {
+    font-size: 35px;
+    margin-bottom: 10px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+}
+
+.video-desc {
+    font-size: 16px;
+    color: #c4b998;
+}
+
+.video {
+    width: 862px;
+    height: 100%;
+    padding: 15px;
+}
