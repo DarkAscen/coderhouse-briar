@@ -16,6 +16,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(5, 13, 17)
+}
+
 .grid-container {
     display: grid;
     grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px;
@@ -61,7 +65,7 @@
 }
 
 .background-briar {
-    background-image: url(../Imagenes/briarDefault.jpg);
+    background-image: url(../imagenes/briarDefault.jpg);
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,11 +74,14 @@
 }
 
 .background-game-info {
-    background-image: url(../Imagenes/briarDefault.jpg);
+    background-image: url(../imagenes/briarDefault.jpg);
     background-repeat: no-repeat;
     background-size: 80vw;
     height: 900px;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .champ-title {
@@ -90,7 +97,7 @@
 }
 
 .biography {
-    background-image: url(../Imagenes/briarDefault.jpg) ;
+    background-image: url(../imagenes/briarDefault.jpg) ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,6 +159,7 @@
     font-family: FF Mark W05,Arial,sans-serif;
     text-decoration: none;
     padding: 5px;
+    margin: 0;
 }
 
 header {
@@ -165,6 +173,8 @@ header {
 .navig {
     word-spacing: 1em;
     font-weight: lighter;
+    color: #fff;
+    margin: 0;
 }
 
 .bloque {
@@ -294,11 +304,11 @@ header {
 
 footer {
     text-align: center;
-    margin: 30px;
     align-items: center;
     display: flex;
     flex-direction: column;
     padding: 10px;
+    margin: 30px 0px 30px 0px;
 }
 
 a {
@@ -361,7 +371,7 @@ a {
 }
 
 .back-map {
-    background-image: url(../Imagenes/runeterra-map.jpg);
+    background-image: url(../imagenes/runeterra-map.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -399,67 +409,67 @@ a {
 }
 
 .bandle-city {
-    background-image: url(../Imagenes/bandle-city_splash.jpg);
+    background-image: url(../imagenes/bandle-city_splash.jpg);
     background-size: cover;
 }
 
 .bilgewater {
-    background-image: url(../Imagenes/bilgewater_splash.jpg);
+    background-image: url(../imagenes/bilgewater_splash.jpg);
     background-size: cover;
 }
 
 .demacia {
-    background-image: url(../Imagenes/bandle-city_splash.jpg);
+    background-image: url(../imagenes/bandle-city_splash.jpg);
     background-size: cover;
 }
 
 .ionia {
-    background-image: url(../Imagenes/ionia-splash.jpg);
+    background-image: url(../imagenes/ionia-splash.jpg);
     background-size: cover;
 }
 
 .ixtal {
-    background-image: url(../Imagenes/ixtal-splash.jpg);
+    background-image: url(../imagenes/ixtal-splash.jpg);
     background-size: cover;
 }
 
 .noxus {
-    background-image: url(../Imagenes/noxus_splash.jpg);
+    background-image: url(../imagenes/noxus_splash.jpg);
     background-size: cover;
 }
 
 .piltover {
-    background-image: url(../Imagenes/piltover_splash.jpg);
+    background-image: url(../imagenes/piltover_splash.jpg);
     background-size: cover;
 }
 
 .shadow-isles {
-    background-image: url(../Imagenes/shadow-isles_splash.jpg);
+    background-image: url(../imagenes/shadow-isles_splash.jpg);
     background-size: cover;
 }
 
 .shurima {
-    background-image: url(../Imagenes/shurima_splash.jpg);
+    background-image: url(../imagenes/shurima_splash.jpg);
     background-size: cover;
 }
 
 .targon {
-    background-image: url(../Imagenes/mount-targon_splash.jpg);
+    background-image: url(../imagenes/mount-targon_splash.jpg);
     background-size: cover;
 }
 
 .freljord {
-    background-image: url(../Imagenes/freljord_splash.jpg);
+    background-image: url(../imagenes/freljord_splash.jpg);
     background-size: cover;
 }
 
 .void {
-    background-image: url(../Imagenes/void-splash.jpg);
+    background-image: url(../imagenes/void-splash.jpg);
     background-size: cover;
 }
 
 .zaun {
-    background-image: url(../Imagenes/zaun_splash.jpeg);
+    background-image: url(../imagenes/zaun_splash.jpeg);
     background-size: cover;
 }
 
@@ -504,67 +514,67 @@ a {
 }
 
 .cassio {
-    background-image: url(../Imagenes/Cassiopeia_splash.jpg);
+    background-image: url(../imagenes/cassiopeia_splash.jpg);
     background-size: cover;
     background-position: 70%;
 }
 .darius {
-    background-image: url(../Imagenes/Darius_splash.jpg);
+    background-image: url(../imagenes/darius_splash.jpg);
     background-size: cover;
     background-position: 70% 30%;
 }
 .draven {
-    background-image: url(../Imagenes/Draven_splash.jpg);
+    background-image: url(../imagenes/draven_splash.jpg);
     background-size: cover;
     background-position: 85% 8%;
 }
 .kata {
-    background-image: url(../Imagenes/Katarina_splash.jpg);
+    background-image: url(../imagenes/katarina_splash.jpg);
     background-size: cover;
     background-position: 70%;
 }
 .kled {
-    background-image: url(../Imagenes/Kled_splash.jpg);
+    background-image: url(../imagenes/kled_splash.jpg);
     background-size: cover;
     background-position: 89%;
 }
 .leblanc {
-    background-image: url(../Imagenes/Leblanc_splash.jpg);
+    background-image: url(../imagenes/leblanc_splash.jpg);
     background-size: cover;
     background-position: 75%;
 }
 .morde {
-    background-image: url(../Imagenes/Mordekaiser_splash.jpg);
+    background-image: url(../imagenes/mordekaiser_splash.jpg);
     background-size: cover;
     background-position: 50%;
 }
 .riven {
-    background-image: url(../Imagenes/Riven_splash.jpg);
+    background-image: url(../imagenes/riven_splash.jpg);
     background-size: cover;
     background-position: 90%;
 }
 .samira {
-    background-image: url(../Imagenes/samira-splash.jpg);
+    background-image: url(../imagenes/samira-splash.jpg);
     background-size: cover;
     background-position: 62%;
 }
 .sion {
-    background-image: url(../Imagenes/Sion_splash.jpg);
+    background-image: url(../imagenes/sion_splash.jpg);
     background-size: cover;
     background-position: 80%;
 }
 .swain {
-    background-image: url(../Imagenes/swain-splash.jpg);
+    background-image: url(../imagenes/swain-splash.jpg);
     background-size: cover;
     background-position: 75%;
 }
 .talon {
-    background-image: url(../Imagenes/Talon_splash.jpg);
+    background-image: url(../imagenes/talon_splash.jpg);
     background-size: cover;
     background-position: 70%;
 }
 .vladi {
-    background-image: url(../Imagenes/Vladimir_splash.jpg);
+    background-image: url(../imagenes/vladimir_splash.jpg);
     background-size: cover;
     background-position: 80%;
 }
@@ -663,7 +673,7 @@ h3 {
 }
 
 .icon {
-    width: 32px;
+    width: 40px;
     height: auto;
 }
 
@@ -749,15 +759,18 @@ h3 {
     justify-content: space-evenly;
     align-items: flex-start;
     background-color: #292929;
+    margin: 8px 0px 8px 0px;
 }
 
 .footer-form p {
     background-color: #292929;
     font-weight: 600;
+    margin: 0;
 }
 
 .esrb-class {
     display: flex;
+    background-color: #292929;
 }
 
 .footer-back {
@@ -841,4 +854,103 @@ h3 {
     width: 862px;
     height: 100%;
     padding: 15px;
+}
+
+.link {
+    color: #fff;
+}
+
+.carousel-skins {
+    width: 80vw;
+    height: auto;
+}
+
+.game-info-title {
+    font-family: Beaufort for LOL,Arial,sans-serif;
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    background-color: transparent
+}
+
+.game-info-title-pos {
+    font-weight: bold;
+    letter-spacing: 0;
+    margin: 0;
+    background-color: transparent
+}
+
+.clean-bg {
+    background-color: transparent;
+}
+
+.game-info-title-text {
+    position: relative;
+    bottom: 10%;
+    background-color: transparent;
+    text-shadow: 2px 2px 10px #111;
+}
+
+.briar-info-title {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    font-family: Beaufort for LOL,Arial,sans-serif;
+    height: 250px;
+    position: relative;
+    bottom: 100px;
+}
+
+.role-difficulty {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    border-right: 1px solid #fff;
+}
+
+.game-bio {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 0px 50px 0 50px;
+    font-size: 14px;
+}
+
+.clean-margin {
+    margin: 0;
+    font-size: 12px;
+}
+
+.game-info-img {
+    margin-bottom: 10px;
+}
+
+.skins {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.carousel-title {
+    font-family: Beaufort for LOL,Arial,sans-serif;
+    margin: 30px;
+    font-weight: bold;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px 10px 0px;
+}
+
+.bi {
+    margin: 10px;
+    background-color: #413f3f;
+    padding: 5px;
+    border-radius: 10px;
 }
