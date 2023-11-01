@@ -316,7 +316,7 @@ a {
 }
 
 .border {
-    border: solid 1px #fff;
+    border: solid 1px #ffffff63 !important;
 }
 
 .bio-title {
@@ -907,7 +907,7 @@ h3 {
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    border-right: 1px solid #fff;
+    border-right: 1px solid #ffffff63;
 }
 
 .game-bio {
@@ -953,4 +953,37 @@ h3 {
     background-color: #413f3f;
     padding: 5px;
     border-radius: 10px;
+}
+
+.abilities {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 20px auto;
+}
+
+.skill-text {
+    font-family: Beaufort for LOL,Arial,sans-serif;
+    text-align: left;
+    margin: 0;
+}
+
+.skill-ind {
+    font-size: 11px;
+    color: #8d8b8b9f;
+}
+
+.skill-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #cac8c8;
+}
+
+.skill-desc {
+    font-size: 14px;
+    color: #cac8c8;
+}
+
+.passive-skill, .q-skill, .w-skill, .e-skill, .r-skill {
+    padding: 20px;
 }
