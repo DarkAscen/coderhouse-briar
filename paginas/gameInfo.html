@@ -8,18 +8,25 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header class="nav-bar">
-        <img class="header logo" src="../imagenes/riotLogo.png" alt="Riot Games logo">
-        <img class="header icon" src="../imagenes/leagueUniverseIcon.png" alt="League of Legends Universe's logo">
-        <p class="header">Universe</p>
-        <nav>
-            <ul class="header navig"> 
-                <a href="../index.html" class="header link">BRIAR</a>
-                <a href="noxus.html" class="header link">NOXUS</a>
-                <a href="biographyBriar.html" class="header link">BIOGRAPHY</a>
-                <a href="regions.html" class="header link">REGIONS</a>
-            </ul>
-        </nav>
+    <header class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid header">
+            <div class="logo-container header">
+                <img class="header logo" src="../imagenes/riotLogo.png" alt="Riot Games logo">
+                <img class="header icon" src="../imagenes/leagueUniverseIcon.png" alt="League of Legends Universe's logo">
+                <p class="header">Universe</p>
+            </div>
+            <button class="navbar-toggler header" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon header"></span>
+            </button>
+            <div class="collapse navbar-collapse header" id="navbarSupportedContent">
+                <ul class=" me-auto mb-2 mb-lg-0 header navig">
+                    <a class="nav-link active header link" aria-current="page" href="../index.html">BRIAR</a>
+                    <a class="nav-link active header link" aria-current="page" href="biographyBriar.html">BIOGRAPHY</a>
+                    <a class="nav-link active header link" aria-current="page" href="noxus.html">NOXUS</a>
+                    <a class="nav-link active header link" aria-current="page" href="regions.html">REGIONS</a>
+                </ul>
+            </div>
+        </div>
     </header>
     <main>
         <div class="background-game-info ">
@@ -46,35 +53,38 @@
             </div>
             </div>
         <div class="abilities" id="abilities" >
-            <div class="passive-skill border">
-                <img src="../imagenes/briar_Passive.png" alt="Passive Icon" class="skill-icon">
-                <p class="skill-text skill-ind">PASSIVE</p>
-                <h3 class="skill-text skill-name">CRIMSON CURSE</h3>
-                <p class="skill-text skill-desc">Briar's attacks and abilities apply a stacking bleed that heals her for a portion of the damage it deals. Perpetually hungry, she gains increased healing based on her missing Health, but lacks innate Health Regeneration.</p>
-            </div>
-            <div class="q-skill border">
-                <img src="../imagenes/briar_Q.png" alt="Q Icon" class="skill-icon">
-                <p class="skill-text skill-ind">Q</p>
-                <h3 class="skill-text skill-name">HEAD RUSH</h3>
-                <p class="skill-text skill-desc">Briar leaps to a unit and hits enemies with The Heel Wheel (of Pain), stunning them and breaking their Armor.</p>
-            </div>
-            <div class="w-skill border">
-                <img src="../imagenes/briar_W.png" alt="W Icon" class="skill-icon">
-                <p class="skill-text skill-ind">W</p>
-                <h3 class="skill-text skill-name">BLOOD FRENZY / SNACK ATTACK</h3>
-                <p class="skill-text skill-desc">Briar leaps forward and shatters her pillory, entering a Blood Frenzy that causes her to relentlessly pursue the nearest enemy (prioritizing champions). While frenzied, she gains increased Attack Speed and Move Speed, and her attacks deal damage in an area around her target. Briar can reactivate this ability while frenzied to take a CHOMP out of her target on her next attack, dealing additional damage based on their missing Health, and healing Briar based on the damage she deals.</p>
-            </div>
-            <div class="e-skill border">
-                <img src="../imagenes/briar_E.png" alt="E Icon" class="skill-icon">
-                <p class="skill-text skill-ind">E</p>
-                <h3 class="skill-text skill-name">CHILLING SCREAM</h3>
-                <p class="skill-text skill-desc">Briar refocuses her mind, removing Blood Frenzy and channeling energy into a powerful scream that damages and slows enemies. While charging, she takes reduced damage and heals for a portion of her max Health. A fully charged scream knocks foes back, dealing additional damage and stunning those who collide with a wall.</p>
-            </div>
-            <div class="r-skill border">
-                <img src="../imagenes/briar_R.png" alt="R Icon" class="skill-icon">
-                <p class="skill-text skill-ind">R</p>
-                <h3 class="skill-text skill-name">CERTAIN DEATH</h3>
-                <p class="skill-text skill-desc">Briar kicks her pillory's hemolith gemstone, marking the first champion it hits as her prey. She then beelines straight to them, fearing other surrounding enemies upon arriving at her target, and enters a state of complete hemomania. She will pursue her prey until death, gaining the benefits of Blood Frenzy as well as additional Armor, Magic Resistance, Life Steal, and Move Speed.</p>
+            <h2 class="abilities-title">ABILITIES</h2>
+            <div class="abilities-bubbles">
+                <div class="passive-skill border">
+                    <img src="../imagenes/briar_Passive.png" alt="Passive Icon" class="skill-icon">
+                    <p class="skill-text skill-ind">PASSIVE</p>
+                    <h3 class="skill-text skill-name">CRIMSON CURSE</h3>
+                    <p class="skill-text skill-desc">Briar's attacks and abilities apply a stacking bleed that heals her for a portion of the damage it deals. Perpetually hungry, she gains increased healing based on her missing Health, but lacks innate Health Regeneration.</p>
+                </div>
+                <div class="q-skill border">
+                    <img src="../imagenes/briar_Q.png" alt="Q Icon" class="skill-icon">
+                    <p class="skill-text skill-ind">Q</p>
+                    <h3 class="skill-text skill-name">HEAD RUSH</h3>
+                    <p class="skill-text skill-desc">Briar leaps to a unit and hits enemies with The Heel Wheel (of Pain), stunning them and breaking their Armor.</p>
+                </div>
+                <div class="w-skill border">
+                    <img src="../imagenes/briar_W.png" alt="W Icon" class="skill-icon">
+                    <p class="skill-text skill-ind">W</p>
+                    <h3 class="skill-text skill-name">BLOOD FRENZY / SNACK ATTACK</h3>
+                    <p class="skill-text skill-desc">Briar leaps forward and shatters her pillory, entering a Blood Frenzy that causes her to relentlessly pursue the nearest enemy (prioritizing champions). While frenzied, she gains increased Attack Speed and Move Speed, and her attacks deal damage in an area around her target. Briar can reactivate this ability while frenzied to take a CHOMP out of her target on her next attack, dealing additional damage based on their missing Health, and healing Briar based on the damage she deals.</p>
+                </div>
+                <div class="e-skill border">
+                    <img src="../imagenes/briar_E.png" alt="E Icon" class="skill-icon">
+                    <p class="skill-text skill-ind">E</p>
+                    <h3 class="skill-text skill-name">CHILLING SCREAM</h3>
+                    <p class="skill-text skill-desc">Briar refocuses her mind, removing Blood Frenzy and channeling energy into a powerful scream that damages and slows enemies. While charging, she takes reduced damage and heals for a portion of her max Health. A fully charged scream knocks foes back, dealing additional damage and stunning those who collide with a wall.</p>
+                </div>
+                <div class="r-skill border">
+                    <img src="../imagenes/briar_R.png" alt="R Icon" class="skill-icon">
+                    <p class="skill-text skill-ind">R</p>
+                    <h3 class="skill-text skill-name">CERTAIN DEATH</h3>
+                    <p class="skill-text skill-desc">Briar kicks her pillory's hemolith gemstone, marking the first champion it hits as her prey. She then beelines straight to them, fearing other surrounding enemies upon arriving at her target, and enters a state of complete hemomania. She will pursue her prey until death, gaining the benefits of Blood Frenzy as well as additional Armor, Magic Resistance, Life Steal, and Move Speed.</p>
+                </div>
             </div>
         </div>
         <div class="skins" id="skins">

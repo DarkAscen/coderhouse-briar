@@ -3,67 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <title>Briar - Universe of League of Legends</title>
 </head>
 <body>
-    <header class="nav-bar">
-        <img class="header logo" src="imagenes/riotLogo.png" alt="Riot Games logo">
-        <img class="header icon" src="imagenes/leagueUniverseIcon.png" alt="League of Legends Universe's logo">
-        <p class="header">Universe</p>
-        <nav>
-            <ul class="header navig">
-                <a class="header" href="paginas/regions.html">REGIONS</a>
-            </ul>
-        </nav>
+    <header class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid header">
+            <div class="logo-container header">
+                <img class="header logo" src="imagenes/riotLogo.png" alt="Riot Games logo">
+                <img class="header icon" src="imagenes/leagueUniverseIcon.png" alt="League of Legends Universe's logo">
+                <p class="header">Universe</p>
+            </div>
+            <button class="navbar-toggler header" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon header"></span>
+            </button>
+            <div class="collapse navbar-collapse header" id="navbarSupportedContent">
+                <ul class=" me-auto mb-2 mb-lg-0 header navig">
+                    <a class="nav-link active header link" aria-current="page" href="paginas/biographyBriar.html">BIOGRAPHY</a>
+                    <a class="nav-link active header link" aria-current="page" href="paginas/gameInfo.html">GAME</a>
+                    <a class="nav-link active header link" aria-current="page" href="paginas/noxus.html">NOXUS</a>
+                    <a class="nav-link active header link" aria-current="page" href="paginas/regions.html">REGIONS</a>
+                </ul>
+            </div>
+        </div>
     </header>
     <main>
-        <div class="Briar-title">
-            <h1 class="background-briar briar-title"><span class="title-pos">BRIAR</span></h1>
+        <div class="briar-title">
+            <h1 class="background-briar briar-title"><span class="title-pos ">BRIAR</span></h1>
             <p class="champ-title">THE RESTRAINED HUNGER</p>
         </div>
         <div class="grid-container">
             <div class="related-champs bloque">
                 <div class="related-title">
-                    <h4 class="text-color lighter">RELATED CHAMPIONS</h4>
+                    <h4 class="text-color lighter no-margin" id="related-title">RELATED CHAMPIONS</h4>
                 </div>
                 <div class="champ-cages">
                     <div class="champ-cage">
                         <img src="imagenes/sionDefault.jpg" alt="Sion's default image" class="rel-champs">
-                        <p class="rel-title">SION</p>
+                        <p class="rel-title no-margin">SION</p>
                     </div>
                     <div class="champ-cage">
                         <img src="imagenes/swainDefault.jpg" alt="Swain's default image" class="rel-champs">
-                        <p class="rel-title">SWAIN</p>
+                        <p class="rel-title no-margin">SWAIN</p>
                     </div>
                     <div class="champ-cage">
                         <img src="imagenes/talonDefault.jpg" alt="Talon's default image" class="rel-champs">
-                        <p class="rel-title">TALON</p>
+                        <p class="rel-title no-margin">TALON</p>
                     </div>
                     <div class="champ-cage">
                         <img src="imagenes/vladimirDefault.jpg" alt="Vladimir's default image" class="rel-champs">
-                        <p class="rel-title">VLADIMIR</p>
+                        <p class="rel-title no-margin">VLADIMIR</p>
                     </div>
                 </div>
             </div>
             <div class="quote bloque">
                 <img src="imagenes/briar_splash.jpg" alt="Briar's default image" class="quote-briar quote-img">
-                <p class="quote-text">"I don't lose control, i free myself from control."</p>
-                <p class="quote-name">~Briar</p>
+                <p class="quote-text no-margin">"I don't lose control, i free myself from control."</p>
+                <p class="quote-name no-margin">~Briar</p>
             </div>
             <div class="biography bloque">
                 <div class="layer">
                     <div class="bio-text">
-                        <p>A failed experiment by the Black Rose, Briar’s uncontrollable bloodlust required a special pillory to focus her frenzied mind. After years of confinement, this living weapon broke free from her restraints and unleashed herself into the world. Now she’s controlled by no one—following only her hunger for knowledge and blood—and relishes the opportunities to let loose, even if reining back the frenzy isn’t easy.</p>
-                        <a href="paginas/biographyBriar.html">READ BIOGRAPHY -></a>
+                        <p class="no-margin">A failed experiment by the Black Rose, Briar’s uncontrollable bloodlust required a special pillory to focus her frenzied mind. After years of confinement, this living weapon broke free from her restraints and unleashed herself into the world. Now she’s controlled by no one—following only her hunger for knowledge and blood—and relishes the opportunities to let loose, even if reining back the frenzy isn’t easy.</p>
+                        <a href="paginas/biographyBriar.html" class="no-margin">READ BIOGRAPHY -></a>
                     </div>
                 </div>
             </div>
             <div class="role bloque">
                 <img src="imagenes/fighterIcon.png" alt="Fighter's icon" class="fighter-icon">
                 <div class="role-text">
-                    <p class="text-color">ROLE</p>
-                    <p class="text-color">FIGHTER</p>
+                    <p class="text-color no-margin">ROLE</p>
+                    <p class="text-color no-margin">FIGHTER</p>
                 </div>
             </div>
             <div class="region-briar bloque">
@@ -71,8 +82,8 @@
                     <a href="paginas/noxus.html" class="noxus-link"><img src="Imagenes/noxusEmblem.png" alt="Noxus's emblem" class="noxus-emblem"></a>
                 </div>
                     <div class="region-text">
-                    <a href="paginas/noxus.html"><p class="text-color">REGION</p></a>
-                    <a href="paginas/noxus.html"><p class="text-color">NOXUS</p></a>
+                    <a href="paginas/noxus.html"><p class="text-color no-margin">REGION</p></a>
+                    <a href="paginas/noxus.html"><p class="text-color no-margin">NOXUS</p></a>
                 </div>
             </div>
             <div class="game-info-briar bloque">
@@ -80,7 +91,7 @@
                     <a href="paginas/gameInfo.html"><img src="Imagenes/leagueOfLegendsIcon.png" alt="League of Legends Icon" class="game-info-icon"></a>
                 </div>
                 <div class="game-info-text">
-                    <a href="paginas/noxus.html"><p class="text-color">GAME INFO</p></a>
+                    <a href="paginas/noxus.html"><p class="text-color no-margin">GAME INFO</p></a>
                 </div>
             </div>
         </div>
@@ -101,5 +112,6 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
