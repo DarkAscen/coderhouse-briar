@@ -1,0 +1,1439 @@
+@font-face {
+    font-family: Beaufort for LOL;
+    src: url(../fonts/beaufort-for-lol/BeaufortforLOL-Medium.ttf);
+}
+
+@font-face {
+    font-family: FF Mark W05;
+    src: url(../fonts/ff-mark/FontFont_FF.Mark.Pro.Black.otf);
+}
+
+$font1: "Beaufort for LOL",Arial,sans-serif;
+$font2: "FF Mark W05",Arial,sans-serif;
+
+$color1: rgba(202,171,103,.37);
+$color2: #937341;
+$color3: #c4b998;
+$color4: #ffffff63;
+$color5: rgb(5, 13, 17);
+$color6: #111;
+$color7: #fff;
+$color8: #292929;
+$color9: #cac8c8;
+$color10: transparent;
+
+* {
+    background-color: $color5;
+    color: $color7;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color5;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px;
+    grid-template-columns: 300px 700px 300px; 
+    grid-template-areas:
+    "rel quote role"
+    "rel quote region"
+    "rel quote region"
+    "rel bio region"
+    "rel bio region"
+    "rel bio region"
+    "rel bio gameinfo"
+    "rel bio gameinfo";
+    grid-gap: 15px;
+    margin: 30px 0;
+    justify-content: center;
+}
+
+.briar-title {
+    text-align: center;
+    font-size: 104px;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    font-family: $font1;
+}
+
+.title-pos {
+    position: relative;
+    top: 70%;
+    background-color: $color10;
+    color: $color2;
+    text-shadow: 1px 1px 5px $color6;
+}
+
+.bio-title-pos {
+    position: relative;
+    top: 78%;
+    background-color: $color10;
+    font-size: 90px;
+    font-weight: 500;
+    font-family: $font1;
+    letter-spacing: 0.05em;
+}
+
+.background-briar {
+    background-image: url(../imagenes/briarDefault.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 10px double $color1;
+    border-bottom: 10px double $color1;
+}
+
+.background-game-info {
+    background-image: url(../imagenes/briarDefault.jpg);
+    background-repeat: no-repeat;
+    background-size: 80vw;
+    height: 900px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.champ-title {
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    color: $color3;
+    font-family: $font1;
+}
+
+.biography {
+    background-image: url(../imagenes/briarDefault.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    line-height: 1.2;
+    grid-area: bio;
+    display: flex;
+    font-family: $font1;
+}
+
+.biography p::first-letter {
+    font-size: 40px;
+    border-bottom: 3px solid $color2;
+    font-weight: 500;
+    margin: 0 20px 0 18px;
+    float: left;
+}
+
+.biography p {
+    padding: 20px 50px;
+    color: $color3;
+}
+
+.biography a {
+    border: 2px solid $color2;
+    color: $color3;
+    padding: 20px 30px;
+    flex-direction: flex-end;
+    background-color: $color6;
+}
+
+.bio-text {
+    background-color: $color10;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.capa {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    font-family: $font2;
+}
+
+.header {
+    background-color: $color6;
+    font-family: $font2;
+    text-decoration: none;
+    padding: 5px;
+    margin: 0;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+header {
+    background-color: $color6;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    display: inline-block;
+}
+
+.navig {
+    word-spacing: 1em;
+    font-weight: lighter;
+    color: $color7;
+    margin: 0;
+
+}
+
+.bloque {
+    display: inline-block;
+}
+
+.background {
+    background-color: $color6;
+}
+
+.related-champs {
+    border: solid 1px $color2;
+    grid-area: rel;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    border: solid 1px $color2;
+    grid-area: quote;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote img {
+    border: 10px double $color2;
+    position: relative;
+    bottom: 30%;
+}
+
+.quote p {
+    position: relative;
+    bottom: 20%;
+    font-size: 25px;
+    padding: 10px;
+    font-family: $font1;
+    font-weight: 500;
+}
+
+.quote-name {
+    color: $color2;
+}
+
+.quote-text {
+    color: $color3;
+    text-align: center;
+}
+
+.biography {
+    border: solid 1px $color2;
+    grid-area: bio;
+}
+
+.role {
+    border: solid 1px $color2;
+    grid-area: role;
+    display: flex;
+}
+
+.role img {
+    border-right: solid 1px $color2;
+    padding: 15px;
+    width: 25%;
+}
+
+.role-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: $font1;
+}
+
+.region-briar {
+    border: solid 1px $color2;
+    grid-area: region;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../imagenes/noxus_splash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.region-text {
+    border-top: 1px solid $color2;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: $font1;
+}
+
+.text-color {
+    color: $color3;
+}
+
+.lighter {
+    font-weight: lighter;
+}
+
+.game-info-briar {
+    border: solid 1px $color2;
+    grid-area: gameinfo;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url(../imagenes/briarDefault.jpg);
+    background-size: cover;
+}
+
+.game-info-briar a{
+    background-color: $color10;
+}
+
+.game-info-text {
+    border-top: 1px solid $color2;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    font-family: $font1;
+}
+
+footer {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 30px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.border {
+    border: solid 1px $color4 !important;
+}
+
+.bio-title {
+    text-align: center;
+    font-family: $font1;
+}
+
+.biography-corpse {
+    height: auto;
+    width: 600px;
+    font-family: $font1;
+    margin: 40px auto;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+}
+
+.bio-name {
+    margin-top: 10px;
+    color: $color3;
+}
+
+#bio-name {
+    margin-bottom: 70px;
+}
+
+.biography-corpse p{
+    color: #949494; 
+    padding: 10px 0;
+    margin: 0;
+}
+
+.bio-title{
+    font-family: $font1;
+}
+
+.bio-title h2 {
+    font-size: 24px;
+    letter-spacing: 0.05em;
+}
+
+.bio-title h5 {
+    color: $color3;
+}
+
+.regions {
+    width: 100%;
+    height: 2000px;
+}
+
+.region-div-1 {
+    height: 350px;
+    background-color: #111111ad;
+}
+
+.region-bubbles {
+    background-color: #111111ad;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.back-map {
+    background-image: url(../imagenes/runeterra-map.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.layer {
+    background-color: #111111c9;
+    width: 100%;
+    height: 100%;
+}
+
+.index-pos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio-text p {
+    background-color: $color10;
+}
+
+.bubble {
+    height: 200px;
+    width: 20%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column-reverse;
+    border: 1px solid #1e2328;
+    background-color: $color10;
+}
+
+.bubble:hover {
+    transform: scale(1.1);
+}
+
+.bandle-city {
+    background-image: url(../imagenes/bandle-city_splash.jpg);
+    background-size: cover;
+}
+
+.bilgewater {
+    background-image: url(../imagenes/bilgewater_splash.jpg);
+    background-size: cover;
+}
+
+.demacia {
+    background-image: url(../imagenes/bandle-city_splash.jpg);
+    background-size: cover;
+}
+
+.ionia {
+    background-image: url(../imagenes/ionia-splash.jpg);
+    background-size: cover;
+}
+
+.ixtal {
+    background-image: url(../imagenes/ixtal-splash.jpg);
+    background-size: cover;
+}
+
+.noxus {
+    background-image: url(../imagenes/noxus_splash.jpg);
+    background-size: cover;
+}
+
+.piltover {
+    background-image: url(../imagenes/piltover_splash.jpg);
+    background-size: cover;
+}
+
+.shadow-isles {
+    background-image: url(../imagenes/shadow-isles_splash.jpg);
+    background-size: cover;
+}
+
+.shurima {
+    background-image: url(../imagenes/shurima_splash.jpg);
+    background-size: cover;
+}
+
+.targon {
+    background-image: url(../imagenes/mount-targon_splash.jpg);
+    background-size: cover;
+}
+
+.freljord {
+    background-image: url(../imagenes/freljord_splash.jpg);
+    background-size: cover;
+}
+
+.void {
+    background-image: url(../imagenes/void-splash.jpg);
+    background-size: cover;
+}
+
+.zaun {
+    background-image: url(../imagenes/zaun_splash.jpeg);
+    background-size: cover;
+}
+
+.regions-title {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    text-align: left;
+    margin-left: 20px;
+    font-family: $font1;
+    position: relative;
+    top: 55%;
+    background-color: $color10;
+}
+
+.region-title {
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    font-family: $font1;
+}
+
+.champ {
+    border: 1px solid $color6;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 250px;
+    margin: 10px;
+    height: 392px;
+}
+
+.champ:hover {
+    transform: scale(1.1);
+}
+
+.cassio {
+    background-image: url(../imagenes/cassiopeia_splash.jpg);
+    background-size: cover;
+    background-position: 70%;
+}
+.darius {
+    background-image: url(../imagenes/darius_splash.jpg);
+    background-size: cover;
+    background-position: 70% 30%;
+}
+.draven {
+    background-image: url(../imagenes/draven_splash.jpg);
+    background-size: cover;
+    background-position: 85% 8%;
+}
+.kata {
+    background-image: url(../imagenes/katarina_splash.jpg);
+    background-size: cover;
+    background-position: 70%;
+}
+.kled {
+    background-image: url(../imagenes/kled_splash.jpg);
+    background-size: cover;
+    background-position: 89%;
+}
+.leblanc {
+    background-image: url(../imagenes/leblanc_splash.jpg);
+    background-size: cover;
+    background-position: 75%;
+}
+.morde {
+    background-image: url(../imagenes/mordekaiser_splash.jpg);
+    background-size: cover;
+    background-position: 50%;
+}
+.riven {
+    background-image: url(../imagenes/riven_splash.jpg);
+    background-size: cover;
+    background-position: 90%;
+}
+.samira {
+    background-image: url(../imagenes/samira-splash.jpg);
+    background-size: cover;
+    background-position: 62%;
+}
+.sion {
+    background-image: url(../imagenes/sion_splash.jpg);
+    background-size: cover;
+    background-position: 80%;
+}
+.swain {
+    background-image: url(../imagenes/swain-splash.jpg);
+    background-size: cover;
+    background-position: 75%;
+}
+.talon {
+    background-image: url(../imagenes/talon_splash.jpg);
+    background-size: cover;
+    background-position: 70%;
+}
+.vladi {
+    background-image: url(../imagenes/vladimir_splash.jpg);
+    background-size: cover;
+    background-position: 80%;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-family: $font1;
+    font-weight: lighter;
+    color: $color3;
+}
+
+.champ-noxus {
+    width: 100%;
+    height: 70px;
+    border-top: 1px solid $color3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $font1;
+}
+
+.noxian {
+    font-size: 14px;
+    margin: 0;
+}
+
+.champ-name {
+    font-size: 20px;
+    color: $color3;
+    margin: 0;
+}
+
+.footer-logo{
+    width: 100px;
+    height: 32px;
+    margin: 10px;
+}
+
+.rel-champs {
+    width: 140px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid $color2;
+}
+
+.champ-cage:hover{
+    transform: scale(1.2);
+}
+
+.champ-cages {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.champ-cage {
+    margin: 20px;
+}
+
+.esrb{ 
+    width: 80px;
+    height: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    background-color: $color8;
+}
+
+.noxus-emblem{
+    width: 250px;
+    height: auto;
+    background-color: $color10;
+}
+
+.noxus-link {
+    background-color: $color10;
+}
+
+.noxus-emblem:hover {
+    transform: scale(1.2);
+}
+
+.fighter-icon {
+    width: 50px;
+    height: auto;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.icon {
+    width: 40px;
+    height: auto;
+}
+
+.quote-briar {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.quote-img {
+    width: 160px;
+    height: 160px;
+}
+
+.game-info-icon{
+    width: 80px;
+    height: auto;
+    background-color: $color10;
+}
+
+.game-info-icon:hover {
+    transform: scale(1.2);
+}
+
+.f-icon {
+    width: 40px;
+    height: auto;
+}
+
+.skill-icon{
+    width: 50px;
+    height: auto;
+}
+
+.noxus-crest {
+    width: 150px;
+    height: auto;
+    background-color: $color10;
+    position: relative;
+    bottom: 10%;
+}
+
+.rel-title{
+    text-align: center;
+    font-weight: bold;
+    color: $color3;
+    font-family: $font1;
+}
+
+.no-margin {
+    margin:0;
+}
+
+.related-title {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid $color2;
+    font-family: $font1;
+}
+
+#related-title {
+    font-size: 18px;
+}
+
+.noxus-n::first-letter{
+    font-size: 50px;
+    border-bottom: 3px solid $color2;
+    font-weight: 500;
+    margin: 0 20px 0 18px;
+    float: left;
+}
+
+.footer-text {
+    width: 500px;
+    padding: 10px;
+}
+
+.footer-copyright {
+    margin: 30px;
+    width: 45%;
+    font-family: $font2;
+    color: #7e7e7e;
+}
+
+.footer-form {
+    font-family: $font2;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: $color8;
+    margin: 8px 0 8px 0;
+}
+
+.footer-form p {
+    background-color: $color8;
+    font-weight: 600;
+    margin: 0;
+}
+
+.esrb-class {
+    display: flex;
+    background-color: $color8;
+}
+
+.footer-back {
+    background-color: $color8;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    width: 390px;
+}
+
+.noxus-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../imagenes/noxus_splash.jpg);
+    height: 500px;
+    justify-content: flex-end;
+}
+
+.noxus-title-pos {
+    color: $color2;
+    background-color: $color10;
+    text-shadow: 1px 1px 5px $color6;
+    letter-spacing: 0.1em;
+}
+
+.noxus-bio p {
+    font-family: $font1;
+    color: $color3;
+    padding: 10px 0;
+}
+
+.noxus-bio {
+    width: 600px;
+    height: auto;
+    letter-spacing: 0.02em;
+    font-size: 20px;
+    margin: 40px auto;
+}
+
+.champ-bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0 90px 0;
+}
+
+.video-box {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    border: 1px solid $color1;
+    align-items: center;
+    justify-content: left;
+    height: 500px;
+    margin: 30px auto 60px auto;
+}
+
+.video-text {
+    font-family: $font1;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.video-title {
+    font-size: 35px;
+    margin-bottom: 10px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+}
+
+.video-desc {
+    font-size: 16px;
+    color: $color3;
+}
+
+.video {
+    width: 862px;
+    height: 100%;
+    padding: 15px;
+}
+
+.link {
+    color: $color7;
+}
+
+.carousel-skins {
+    width: 80vw;
+    height: auto;
+}
+
+.game-info-title {
+    font-family: $font1;
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    background-color: $color10
+}
+
+.game-info-title-pos {
+    font-weight: bold;
+    letter-spacing: 0;
+    margin: 0;
+    background-color: $color10
+}
+
+.clean-bg {
+    background-color: $color10;
+}
+
+.game-info-title-text {
+    position: relative;
+    bottom: 10%;
+    background-color: $color10;
+    text-shadow: 2px 2px 10px $color6;
+}
+
+.briar-info-title {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    font-family: $font1;
+    height: 250px;
+    position: relative;
+    bottom: 100px;
+}
+
+.role-difficulty {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    border-right: 1px solid $color4;
+}
+
+.game-bio {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 0 50px;
+    font-size: 14px;
+}
+
+.game-bio p {
+    margin: 0;
+}
+
+.clean-margin {
+    margin: 0;
+    font-size: 12px;
+}
+
+.game-info-img {
+    margin-bottom: 10px;
+}
+
+.skins {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.abilities-title {
+    font-family: $font1;
+    margin: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.carousel-title {
+    font-family: $font1;
+    margin: 30px;
+    font-weight: bold;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 10px 0;
+}
+
+.bi {
+    margin: 10px;
+    background-color: #413f3f;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.abilities-bubbles {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 20px auto;
+}
+
+.skill-text {
+    font-family: $font1;
+    text-align: left;
+    margin: 0;
+}
+
+.skill-ind {
+    font-size: 11px;
+    color: #8d8b8bce;
+}
+
+.skill-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: $color9;
+}
+
+.skill-desc {
+    font-size: 14px;
+    color: $color9;
+}
+
+.passive-skill, .q-skill, .w-skill, .e-skill, .r-skill {
+    padding: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        margin: 5px auto;
+    }
+
+    .bloque {
+        width: 95%;
+        margin: 5px auto;
+    }
+
+    .related-champs {
+        height: 250px;
+        margin-bottom: 100px;
+    }
+
+    .quote {
+        height: 300px;
+    }
+
+    .biography {
+        height: 400px;
+    }
+
+    .role {
+        height: auto;
+    }
+
+    .role img {
+        width: 30%;
+    }
+
+    .role-text {
+        font-size: 30px;
+    }
+
+    .game-info-briar {
+        height: 200px;
+    }
+
+    .background-briar {
+        background-position: center;
+    }
+
+    .champ-cages {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .champ-cage {
+        margin: 10px;
+    }
+    
+    .rel-champs {
+        width: 18vw;
+    }
+
+    footer {
+        transform: scale(0.8);
+    }
+
+    .footer-copyright {
+        width: 80%;
+    }
+
+    .biography-corpse {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .bubble {
+        margin: 20px auto;
+        width: 90%;
+    }
+
+    .regions-title {
+        font-size: 40px;
+        top: 70%
+    }
+
+    .region-div-1 {
+        height: 300px;
+    }
+
+    .noxus-bio{
+        width: 90%;
+    }
+
+    .champ {
+        width: 100%;
+    }
+
+    .video-box {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .video {
+        width: 95%;
+        height: 280px;
+    }
+
+    .video-text {
+        width: 85%;
+        text-align: center;
+    }
+
+    .noxus-title {
+        background-position: center;
+    }
+
+    .background-game-info {
+        height: 400px;
+        background-size: 90%;
+    }
+
+    .briar-info-title {
+        bottom: 40px;
+        width: 90%;
+        height: 350px;
+    }
+
+    .game-info-title {
+        font-size: 18px;
+    }
+
+    .briar-info-title {
+        flex-direction: column;
+    }
+
+    .role-difficulty {
+        width: 100%;
+        border-bottom: 1px solid $color4;
+        height: 50%;
+        border-right: none;
+    }
+
+    .game-bio {
+        width: 100%;
+        padding: 5px 20px;
+        height: 50%;
+    }
+
+    .briar-title {
+        font-size: 80px;
+    }
+
+    .title-pos {
+        top: 75%;
+    }
+
+    .abilities-bubbles {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:400px) {
+    .biography p {
+        padding: 20px;
+    }
+
+    .rel-champs {
+        width: 35vw;
+    }
+
+    .related-champs {
+        height: 400px;
+    }
+
+    .briar-info-title {
+        height: 400px;
+    }
+
+    .role-difficulty {
+        height: 30%;
+    }
+
+    .game-bio {
+        height: 70%;
+    }
+
+    .champ-cages {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .video {
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        margin: 5px auto;
+    }
+
+    .champ-title {
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+
+    .champ-cages {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .rel-champs {
+        width: 18vw;
+    }
+
+    .bloque {
+        width: 95%;
+        margin: 5px auto;
+    }
+
+    .quote {
+        margin-top: 80px;
+        height: 300px;
+    }
+
+    .bio-text {
+        font-size: 14px;
+    }
+
+    .biography {
+        height: 300px;
+    }
+
+    .role-text {
+        height: auto;
+    }
+
+    .role img {
+        width: 10%;
+    }
+
+    .region-briar {
+        height: 400px;
+    }
+
+    .game-info-briar {
+        height: 300px;
+    }
+
+    footer {
+        transform: scale(0.9);
+    }
+
+    .footer-copyright {
+        width: 80%;
+    }
+
+    .biography-corpse {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .bubble:hover {
+        transform: scale(1);
+    }
+
+    .bubble {
+        margin: 20px auto;
+        width: 45%;
+    }
+
+    .noxus-title {
+        background-position: center;
+    }
+
+    .video-box {
+        width: 100%;
+    }
+
+    .video {
+        width: 60%;
+        height: 300px;
+    }
+
+    .background-game-info {
+        height: 400px;
+        background-size: 90%;
+    }
+
+    .briar-info-title {
+        bottom: 40px;
+        width: 90%;
+        height: 350px;
+    }
+
+    .game-info-title {
+        font-size: 18px;
+    }
+
+    .briar-info-title {
+        flex-direction: column;
+    }
+
+    .role-difficulty {
+        width: 100%;
+        border-bottom: 1px solid $color4;
+        height: 50%;
+        border-right: none;
+    }
+
+    .game-bio {
+        width: 100%;
+        padding: 5px 20px;
+        height: 50%;
+    }
+
+    .briar-title {
+        font-size: 80px;
+    }
+
+    .title-pos {
+        top: 75%;
+    }
+
+    .abilities-bubbles {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navig {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .video {
+        height: 450px;
+    }
+    
+    .background-game-info {
+        height: 600px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1420px) {
+    .grid-container {
+        grid-template-columns: 20% 50% 20%;
+        grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px;
+    }
+
+    .noxus-emblem {
+        width: 200px;
+    }
+
+    .region-text {
+        padding: 10px;
+    }
+
+    .game-info-text {
+        padding: 10px;
+    }
+
+    .game-info-icon {
+        width: 60px;
+    }
+
+    .rel-champs {
+        width: 120px;
+    }
+
+    .quote-img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .quote img {
+        bottom: 20%;
+    }
+
+    .quote p {
+        font-size: 20px;
+    }
+
+    .role img {
+        width: 29%;
+    }
+
+    .briar-info-title {
+        bottom: 60px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .abilities-bubbles {
+        flex-direction: row;
+        width: 90%;
+    }
+
+    .passive-skill, .q-skill, .w-skill, .e-skill, .r-skill {
+        width: 20%;
+    } 
+}
