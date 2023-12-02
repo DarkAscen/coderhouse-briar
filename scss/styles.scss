@@ -435,10 +435,10 @@ a {
     flex-direction: column-reverse;
     border: 1px solid #1e2328;
     background-color: $color10;
-}
 
-.bubble:hover {
-    transform: scale(1.1);
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 .regions-title {
@@ -468,10 +468,10 @@ a {
     width: 250px;
     margin: 10px;
     height: 392px;
-}
 
-.champ:hover {
-    transform: scale(1.1);
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 h3 {
@@ -519,9 +519,6 @@ h3 {
     border: 3px solid $color2;
 }
 
-.champ-cage:hover{
-    transform: scale(1.2);
-}
 
 .champ-cages {
     height: 100%;
@@ -533,6 +530,10 @@ h3 {
 
 .champ-cage {
     margin: 20px;
+
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 
 .esrb{ 
@@ -548,14 +549,14 @@ h3 {
     width: 250px;
     height: auto;
     background-color: $color10;
+
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 
 .noxus-link {
     background-color: $color10;
-}
-
-.noxus-emblem:hover {
-    transform: scale(1.2);
 }
 
 .fighter-icon {
